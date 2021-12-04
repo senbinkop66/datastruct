@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Solution{
-	public boolean containsDuplicate(int[] nums){
+	public int singleNumber(int[] nums){
 		int len=nums.length;
 		if (len<=1) return false;
 		
@@ -21,7 +21,7 @@ public class TestArray1{
 	public static void main(String[] args) {
 		int[] testnums={4,1,2,3};
 		Solution mysolution=new Solution();
-		boolean result=mysolution.containsDuplicate(testnums);
+		int result=mysolution.containsDuplicate(testnums);
 		System.out.println(result);
 		System.out.println(Arrays.toString(testnums));
 	}
